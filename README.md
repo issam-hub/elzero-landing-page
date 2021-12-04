@@ -3,7 +3,7 @@
 ## Overview
 A clone For Elzero Web School Template Three Challenge, And Of Course Made With Love
 
-### Links
+### Live Demo
 - Live Site URL: 
 
 ### Built with
@@ -17,7 +17,7 @@ A clone For Elzero Web School Template Three Challenge, And Of Course Made With 
 
 i pushed myself on limits in this challenge , and cause of that i learned a lot and trained on ceveral things like animations ...ex
 
-## Author
+## Links
 
 - Elzero Web School - https://www.youtube.com/c/ElzeroInfo/featured
 - Html Css Template Three Challenge - https://www.youtube.com/playlist?list=PLDoPjvoNmBAxuCSp2_-9LurPqRVwketnc

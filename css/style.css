@@ -952,6 +952,7 @@ ul {
   left: 0;
   background-color: var(--main-color);
   height: 100%;
+  transition: width var(--main-transition) linear;
 }
 /* End Skills */
 /* Start How It Works */
@@ -1440,9 +1441,10 @@ ul {
 .stats .stat i {
   font-size: 2.1rem;
 }
-.stats .stat h2 {
+.stats .stat span {
   padding-block: 15px;
   font-size: 3rem;
+  font-weight: bold;
 }
 .stats .stat em {
   color: var(--main-color);

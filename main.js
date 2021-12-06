@@ -1,19 +1,3 @@
-/* Start animate skills progress */
-const ourSkills = document.querySelector(".skills");
-const progress = document.querySelectorAll(".skills .progress");
-const percents = document.querySelectorAll(".skills .percent");
-
-window.onscroll = function () {
-  // if we pass the specific breakpoint on the condition below , do :
-  if (window.scrollY >= ourSkills.offsetTop - 150) {
-    progress.forEach((prog) => {
-      //   change the width of each progress
-      prog.style.width = prog.dataset.width;
-    });
-  }
-};
-/* End animate skills progress */
-
 /* Start Event's countdown timer */
 const days = document.querySelector(".events .days");
 const hours = document.querySelector(".events .hours");
@@ -45,14 +29,23 @@ let counter = setInterval(function () {
 }, 1000);
 /* End Event's countdown timer */
 
-/* Start increasing number while scrolling */
+/* Start animate skills progress and increasing number while scrolling*/
+const ourSkills = document.querySelector(".skills");
+const progressSpans = document.querySelectorAll(".skills-progress .progress");
+
 const ourStats = document.querySelector(".stats");
 const statsNumbers = document.querySelectorAll(".stats .stat span");
 // check if the function didn't started to make it run one time only
 let isStarted = false;
 
 window.onscroll = function () {
-  if (window.scrollY >= ourStats.offsetTop - 50) {
+  // Skills Animate Width
+  if (window.scrollY >= ourSkills.offsetTop - 250) {
+    progressSpans.forEach((span) => {
+      span.style.width = span.dataset.width;
+    });
+  }
+  if (window.scrollY >= ourStats.offsetTop - 250) {
     // if the function didn't started do
     if (!isStarted) {
       // start the increasing
@@ -63,6 +56,7 @@ window.onscroll = function () {
   }
 };
 
+// Start Counting Function
 function startCount(element) {
   // select the custom attribute
   let number = element.dataset.number;
@@ -76,4 +70,4 @@ function startCount(element) {
     }
   }, 5);
 }
-/* End increasing number while scrolling */
+/* End animate skills progress and increasing number while scrolling*/
